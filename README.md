@@ -1,4 +1,3 @@
-
 ## Requirements
 
 	sudo apt-get install pandoc
@@ -23,4 +22,4 @@
 
 ## Details
 
-You can find the default css used in `md2html/style-templates/style.css`
+You can find the default css used in `md2html/style-templates/style.css`.
