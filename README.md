@@ -21,4 +21,6 @@
     -s STYLE, --style STYLE
                             Give a css file to be embedded in the html output
 
+## Details
 
+You can find the default css used in `md2html/style-templates/style.css`
