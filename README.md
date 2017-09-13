@@ -1,7 +1,17 @@
 
 ## Usage
 
-    md2html file [file...] [-s style]
+    usage: md2html [-h] [-v] [-k] [-s STYLE] files [files ...]
+
+    positional arguments:
+    files                 Files you want to convert
+
+    optional arguments:
+    -h, --help            show this help message and exit
+    -v, --verbose         Display infos
+    -k, --keep            Keep an existing output file (overwrites by default)
+    -s STYLE, --style STYLE
+                            Give a css file to be embedded in the html output
 
 ## Requirements
 
