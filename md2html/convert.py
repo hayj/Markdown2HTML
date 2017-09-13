@@ -1,7 +1,5 @@
 # coding: utf-8
 
-# cd /home/hayj/Workspace/Python/Organization/Markdown2HTML/md2html/ && pew in markdown2html-venv python convert.py -s truc.css toto.md *.md
-# cd /home/hayj/Workspace/Python/Organization/Markdown2HTML/md2html/ && pew in markdown2html-venv python convert.py ../README.md
 
 from __future__ import division, print_function, absolute_import
 
@@ -17,14 +15,11 @@ from systemtools.location import *
 from systemtools.file import fileToStr, strToFile
 import pypandoc
 
-
-# from md2html.utils import *
-
 def mdFileNameToHtmlFileName(mdFilePath):
     return absPath(mdFilePath) + ".html"
 
 def convert():
-    # Get args:
+    # Get args:"
     parser = argparse.ArgumentParser()
     parser.add_argument('files', nargs='+', help='Files you want to convert')
     parser.add_argument("-v", "--verbose", help="Display infos", action="store_true")
@@ -71,10 +66,7 @@ def convert():
         html = htmlBegin + html + htmlEnd
         print("Writing " + outputPath)
         strToFile(html, outputPath)
-        # print(html)
         
-    # TODO OOOOOO tester ça
-
 if __name__ == '__main__':
     convert()
     # Then we convert all files:
