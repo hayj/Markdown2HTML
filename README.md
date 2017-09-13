@@ -1,4 +1,12 @@
 
+## Requirements
+
+	sudo apt-get install pandoc
+
+## Install
+
+    sudo pip install markdown2html
+
 ## Usage
 
     usage: md2html [-h] [-v] [-k] [-s STYLE] files [files ...]
@@ -13,6 +21,4 @@
     -s STYLE, --style STYLE
                             Give a css file to be embedded in the html output
 
-## Requirements
 
-	sudo apt-get install pandoc
