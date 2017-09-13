@@ -6,7 +6,7 @@
 
     sudo pip install markdown2html
 
-## Usage 
+## Usage
 
     usage: md2html [-h] [-v] [-k] [-s STYLE] files [files ...]
 
@@ -22,4 +22,4 @@
 
 ## Details
 
-You can find the default css used in `md2html/style-templates/style.css`.
+You can find the default css file used in `md2html/style-templates/style.css`.
