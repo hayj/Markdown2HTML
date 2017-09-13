@@ -6,7 +6,7 @@
 
     sudo pip install markdown2html
 
-## Usage
+## Usage 
 
     usage: md2html [-h] [-v] [-k] [-s STYLE] files [files ...]
 
