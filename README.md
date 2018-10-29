@@ -4,7 +4,7 @@
 
 ## Install
 
-    sudo pip install markdown2html
+    sudo pip3 install markdown2html
 
 ## Usage
 

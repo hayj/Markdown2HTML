@@ -1,12 +1,6 @@
 # coding: utf-8
 
-
-from __future__ import division, print_function, absolute_import
-
-
 import sys
-reload(sys)  
-sys.setdefaultencoding('utf8')
 
 
 import argparse
@@ -61,10 +55,10 @@ def convert():
         html = pypandoc.convert(filePath, 'html')
         title = filePath.split("/")[-1]
         style = "<style>" + css + "</style>"
-        htmlBegin = u"<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>" + title + u"</title>" +  style + u"</head><body>\n"
-        htmlEnd = u"\n</body></html>"
+        htmlBegin = "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>" + title + "</title>" +  style + "</head><body>\n"
+        htmlEnd = "\n</body></html>"
         html = htmlBegin + html + htmlEnd
-        print("Writing " + outputPath)
+        print(("Writing " + outputPath))
         strToFile(html, outputPath)
         
 if __name__ == '__main__':
